@@ -1,0 +1,4 @@
+*Linked lists doesn't have indices, instead it has nodes which contains data and pointers
+*List is in a contiguous place in memory and that's why they have indices. The values are all right next to each other in memory. With linked list, all the nodes are going to spread out in different places in memory.
+*With linked list, first node in the list is called head and the last node is called tail and then each node points to the next to the next to the next And the last one is just going to point to none.
+*Because one points to the next, to the next to the next, you're able to find all of your nodes without losing any data 

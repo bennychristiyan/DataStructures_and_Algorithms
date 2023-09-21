@@ -1,0 +1,8 @@
+*Append - Linked List = O(1), List = O(1)
+*Pop - Linked List = O(n), List = O(1)
+*Prepend - Linked List = O(1), List = O(n)
+*Pop first - Linked List = O(1), List = O(n)
+*Insert - Linked List = O(n), List = O(n)
+*Remove - Linked List = O(n), List = O(n)
+*Look by index - Linked List = O(n), List = O(1)
+*Look by value - Linked List = O(n), List = O(n)
