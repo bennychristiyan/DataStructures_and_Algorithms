@@ -306,6 +306,16 @@ class Linkedlist:
             self.tail = new_node
         self.length += 1
         return True  
+    def prepend(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head = new_node
+        self.length += 1
+        return True
     def get_value(self, index):
         if  index < 0 or index >= self.length:
             return None
@@ -406,7 +416,7 @@ class Linkedlist:
             temp = temp.next
         return temp
     def remove(self, index):
-        if index < 0 or index > self.length:
+        if index < 0 or index >= self.length:
             return None
         if index == 0:
             return self.pop_first()
