@@ -1,4 +1,4 @@
-# 1.ENQUEUE OPERATION
+# 1.ENQUEUE OPERATION (Append in Linked list)
 # It adds an element to the end of the queue
 class Node:
     def __init__(self,value):
@@ -41,7 +41,7 @@ my_queue.print_queue()
 
 """
 
-# 2.DEQUEUE OPERATION
+# 2.DEQUEUE OPERATION (Pop first in Linked list)
 # It removes an element from the start of the queue
 
 class Node:

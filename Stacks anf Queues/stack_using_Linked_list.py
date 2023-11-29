@@ -1,4 +1,4 @@
-# 1.PUSH OPERATION
+# 1.PUSH OPERATION (Prepend in Linked list)
 # Pushes an elements at the top of the stack
 
 class Node:
@@ -40,7 +40,7 @@ my_stack.print_stack()
 
 """
 
-# 2.POP OPERATION
+# 2.POP OPERATION (Pop first in Linked list)
 # Pops an element from the top of the stack
 
 class Node:
