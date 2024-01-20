@@ -1,0 +1,13 @@
+Parent node - The node which is a predecessor of a node
+Child node - The node which is a immediate successor of a node
+Root node - The topmost node of a tree or the node which doesn't have any parent node
+Leaf / External node - The nodes which don't have any child nodes
+Edge  = An edge connects 2 nodes to show there is a relationship between them
+Ancestor of a node - Any predecessor nodes on the path of the root node to that node
+Descendant of a node - Any successor nodes on the path of the leaf node to that node
+Level of a node / Depth of a tree - The count of edges on the path from the root node to that node. Root node has level 0
+Height of a tree - The count of edges on the path from the root node to the most distant leaf node. Most distant leaf node has height 0
+Internal node - A node with atleast 1 child node
+Neighbour node - Parent or child of that node
+Sibling node - Nodes which have same parent node
+Subtree- Any node of the tree along with it's descendant

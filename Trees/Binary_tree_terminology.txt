@@ -1,0 +1,3 @@
+Full Binary Tree - Every node either points to 0 or 2 nodes
+Perfect Binary Tree - All nodes have exactly 2 children and all leaf nodes are at the same level
+Complete Binary Tree - All levels, except possibly the last, are filled and all the nodes are as left as possible

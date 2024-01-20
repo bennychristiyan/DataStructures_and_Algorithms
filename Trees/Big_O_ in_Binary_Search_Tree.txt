@@ -1,0 +1,8 @@
+Maximum no.of nodes in a binary search tree = 2^n - 1, where n - no.of levels in the tree 
+lookup(), insert() and remove() methods has a time compelexity of O(logn) in binary search trees
+lookup() and remove() methods has a time compelexity of O(n) in linked list
+insert(), which is append() method, has a time complexity of O(1) in linked list
+
+Hence, it is efficient to use lookup() and remove() method using binary search tree, and use insert() method using linked list
+
+No datastructure is efficient for all situations. Hence, we have to use different datastructure depending on the sitiuation for better time complexity
