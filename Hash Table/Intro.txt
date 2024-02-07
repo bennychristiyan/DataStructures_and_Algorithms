@@ -1,0 +1,46 @@
+DICTIONARIES ARE HASH TABLE:
+
+Built in hash table is dictionaries.
+Dictionaries are made up of a key-value pair.
+
+Eg: ("nails", 1000)
+So nails is the key and 1000 is the value.
+
+HASH TABLE WORKING:
+
+We need a hash function or a hash method.
+We perform a hash on the key.
+We take that key, run it through the hash, and in addition to getting our key value pair back, we get an address.
+
+We run nails through a mathematical function and it returns the number 2.
+So that's going to be the address where we store that key value pair.
+And that is how a dictionary is stored.
+
+TWO IMPORTANT CHARACTERISTICS:
+
+1.It is one way.
+    If we take nails we run it through the hash and we get the number 2. We can't take the 2, put it through the hash and have it produce 
+nails. It is one way only.
+
+2.It is deterministic.
+    It means that for a particular hash function, every time we put nails in, we expect to get the number two every t ime.
+
+COLLISION:
+
+A collision happens when you put a key value pair at an address where there was already a key value pair.
+
+How is it that we have a second key value pair go in at a address without overwriting the last one?
+
+    1.Both of these key value pairs exist within another list at that address of 2. This technique of dealing with collisions, 
+where you just put them at the same address, is called separate chaining.
+    Another way of doing separate chaining is we can have linked lists at those addresses.
+
+    2.Another popular method is, if we already have a key value pair at the address that second key value pair maps to, 
+you go down until you find an empty address and you put the key value pair there. This is called linear probing
+and it is a form of open addressing.
+
+IMPORTANT POINT:
+
+You should always have a prime number of addresses. 
+And the reason for that is a prime number increases the amount of randomness for how the key value pairs are going to be distributed 
+through the hash table, so it reduces your collisions.

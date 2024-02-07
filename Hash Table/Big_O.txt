@@ -1,0 +1,21 @@
+HASH METHOD:
+
+For a given key of a certain number of letters, it will always be the same number of operations to calculate the hash.
+That means that the hash method itself is O(1).
+
+SET ITEM:
+
+We run a key through our hash method. And let's say that's going to be at the address of 2.
+We append that onto our list / linked list. And appending that is O(1).
+
+GET ITEM:
+
+It would seem that the worst possible scenario would be that all of the items would be put at the same address, 
+and we would have to iterate through all of them, and it would be O(n).
+
+But the assumption with a hash table is that all the items are distributed evenly in the hash table.
+The hash method that's built into Python is more efficient at distributing all of the items.
+
+When dealing with a much larger address space, collisions are going to be fairly rare.
+
+So we treat hash tables which are implemented as dictionaries in Python as O(1).
