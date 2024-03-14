@@ -1,0 +1,49 @@
+SPACE COMPLEXITY:
+
+A huge difference between an adjacency list and an adjacency matrix is that in a matrix, each vertex has to store all of the vertices 
+it is not connected to. We have to store all the zeros
+
+adjacency matrix: O(|V^2|)
+adjacency list:   O(|V| + |E|)
+where, V - no. of vertices
+       E - no. of edges
+
+ADDING A NEW VERTEX (Just a vertex, not connected, no edges are added):
+
+Another huge difference between an adjacency list and an adjacency matrix is that,
+
+With an adjacency list adding that vertex you just do it like that. Very simple.
+With an adjacency matrix this is much more complex. Adding a new row. Adding a new column. You're basically rewriting the entire matrix
+
+adjacency matrix: O(|V^2|)
+adjacency list:   O(1)
+
+ADDING A NEW VEDGE (Just a vertex, connected, edges are added):
+
+adjacency matrix: O(1)
+adjacency list:   O(1)
+
+REMOVING AN EDGE (Just a vertex, not connected, edges are removed):
+
+Go through each of the list in the dictionary of all the vertices, find the vertex and remove it. Empty the vertex, by removing all the 
+values in it 
+With a matrix, we're going to change 1 to 0.
+
+adjacency matrix: O(1)
+adjacency list:   O(|E|)
+
+REMOVING A VERTEX (Completely removed):
+
+It looks simple that we're just going to do that. But we also have to remove all of the other edges. A vertex could have an edge with 
+removed vertex. So we have to go through all the lists in dictionary.
+With a matrix, In order to remove that vertex, we have to basically rewrite the entire matrix.
+
+adjacency matrix: O(|V^2|)
+adjacency list:   O(|V| + |E|)
+
+
+
+With the adjacency list, if you have bidirectional connections, there's an efficiency in how you can write your method that makes this 
+more efficient. 
+It is much simpler. 
+It is much more efficient than adjacency matrix.

@@ -1,0 +1,12 @@
+The node is called as vertex in graph. 
+The line connecting 2 vertices is called edge or connection.
+
+There is no limit to how many other vertices that a vertex can connect to.
+
+The edges can be weighted or non weighted. They can also be directional or bidirectional.
+
+Trees are a form of graphs, but they have the limitation that each node can only point to 2 other nodes.
+
+Linked lists are a form of a tree. Therefore, a linked list is a form of a graph with the limitation that they can only point to one 
+other node.
+
