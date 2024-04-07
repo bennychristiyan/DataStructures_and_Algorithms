@@ -1,0 +1,17 @@
+A priority queue. If it has the highest value as the highest priority and you want it to always remove the highest value from the queue
+
+A heap is a really great way of doing this. Because we always have the highest value at the top, and then we can just return it. Heap is 
+always a balanced tree as it is always complete. When you remove the root node and it replace it with the bottom right node, the farthest 
+you will ever have to sink it down is the height of the tree, and the height of a balanced binary tree is O(log n). Also if you add an 
+item, the farthest you will ever have to bubble this up is the height of the tree and that is also O(log n). And O(log n) is very 
+efficient compared to O(n)
+
+In List and Linked List, if we want to remove the highest value, we have to iterate through it one by one to find the highest value.
+Which makes the Big Oh for them O(n), which is very inefficient 
+
+If you know the value you are looking for, it would be much more efficient to implement as a dictionary, because we could go straight to 
+this value as O(1). But if you're just looking for the highest value, you have to iterate through all of them to determine which one has 
+the highest value.
+
+If the Binary search tree is balanced, then the highest value is all the way to the down right. It would be O(log n) to remove it or
+add a new value. But if the Binary search tree is not balanced, it would be O(n) to remove it or add a new value.

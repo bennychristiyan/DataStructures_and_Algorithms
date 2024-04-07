@@ -1,0 +1,24 @@
+It is very similar to a binary search tree and it is a binary tree.
+
+Each node has a number that is higher than all of its descendants, which means the highest value will always be at the top.
+There's no particular order other than all of the descendants are going to be less than or equal to the item at the top.
+So heaps are not good for searching.
+
+A key characteristic of a heap is that it is a complete tree.
+
+Another difference of a heap from a binary search tree is that you can have duplicates.
+
+A max heap has highest value at the top.
+A min heap has minimum value at the top.
+
+The only thing you use a heap for is being able to keep track of the largest item at the top, and be able to quickly remove it.
+
+Heap is stored in a list and node class is not created.
+
+There are two common ways of storing the heap in a list.
+The first way is to store the first item at the index of zero.
+The second and most common way is to store the first item at the index of one.
+
+Left child = 2 * parent index
+Right child = 2 * parent index +1
+ 
