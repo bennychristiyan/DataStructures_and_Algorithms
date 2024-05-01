@@ -1,0 +1,13 @@
+Recursion is a function that calls itself until it doesn't.
+
+The process of whatever we're doing with recursion has to be the same.
+Each time we use recursion, we make the problem smaller.
+
+If a condition inside the recursive function is satisfied, it returns something and the function stops calling itself, it is called a 
+base case. 
+If it needs to call itself again, it is called a recursive case.
+
+If there is not any return statement (base case) in the recursive function, it creates infinite no. of instances and causes a condition 
+called stack overflow. You cannot simply put print statement instead of return statement
+
+The condition inside the recursive function must become true at some point
