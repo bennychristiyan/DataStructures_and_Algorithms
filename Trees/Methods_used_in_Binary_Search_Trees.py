@@ -38,7 +38,7 @@ class BinarySearchTree:
 
 #2.Lookup method
     def lookup(self, value):
-        #We don't need to checl if the tree is empty, because if the tree is empty, temp would be equal to None. Hence, while condition won't be satisfied and returns False
+        #We don't need to check if the tree is empty, because if the tree is empty, temp would be equal to None. Hence, while condition won't be satisfied and returns False
         temp = self.root
         while temp is not None:
             if value < temp.value:
