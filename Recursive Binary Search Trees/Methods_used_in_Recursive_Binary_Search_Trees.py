@@ -10,6 +10,8 @@ class BinarySearchTree:
         self.root = None
 
 #1.Insert method     
+#The recursive insert method has an additional parameter called currentnode, hence a normal insert method is also created to call the recursive
+#insert method
     def __rinsert(self, currentnode, value):
         if currentnode == None:
             return Node(value)
@@ -25,6 +27,8 @@ class BinarySearchTree:
         self.__rinsert(self.root, value)
     
 #2.Lookup method
+#The recursive lookup method has an additional parameter called currentnode, hence a normal lookup method is also created to call the recursive
+#lookup method
     def __rlookup(self, currentnode, value):
         if currentnode == None:
             return False
@@ -39,20 +43,31 @@ class BinarySearchTree:
         return self.__rlookup(self.root, value)
     
 #3.Delete method
+#The recursive delete method has an additional parameter called currentnode, hence a normal delete method is also created to call the recursive
+#delete method
     def __rdelete(self, currentnode, value):
+        #If the node is not found in the BST
         if currentnode == None:
             return None
+        #If the value is less than the currentnode value
         if value < currentnode.value:
             currentnode.left = self.__rdelete(currentnode.left, value)
+        #If the value is greater than the currentnode value
         elif value > currentnode.value:
             currentnode.right = self.__rdelete(currentnode.right, value)
+        #If the value is found in the BST
         else:
+            #If the currentnode has no child nodes
             if currentnode.left == None and currentnode.right == None:
                 return None
+            #If the currentnode has no left subtree
             elif currentnode.left == None:
                 currentnode = currentnode.right
+            #If the currentnode has no right subtree
             elif currentnode.right == None:
                 currentnode = currentnode.left
+            #If the currentnode has subtrees on both sides: Find the minimum value in the right subtree, replace the value of currentnode with it 
+            #and delete the minimum node in that subtree    
             else:
                 min = self.min_value(currentnode.right)
                 currentnode.value = min
