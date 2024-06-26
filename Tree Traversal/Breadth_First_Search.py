@@ -27,7 +27,8 @@ class BinarySearchTree:
                     temp.right = new_node
                     return True
                 temp = temp.right
-
+                
+#BFS uses Queue datastructure. It traversals the tree, level by level (i.e) It visits both child nodes of a node at a time
     def BFS(self):
         currentnode = self.root
         queue = []
@@ -53,3 +54,10 @@ my_tree.insert(52)
 my_tree.insert(82)
 
 print(my_tree.BFS())
+
+#Output
+"""
+
+[47, 21, 76, 18, 27, 52, 82]
+
+"""
