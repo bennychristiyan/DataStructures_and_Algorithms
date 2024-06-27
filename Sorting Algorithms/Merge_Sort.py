@@ -2,7 +2,7 @@
 #1.Merge Sort method
 #This method divides the list into small lists with only one element in them
 def MergeSort(my_list):
-    if len(my_list) == 1:
+    if len(my_list) == 1 or len(my_list) == 0:
         return my_list
     mid = len(my_list) // 2
     left = MergeSort(my_list[:mid])
@@ -30,7 +30,7 @@ def merge(list1, list2):
         j += 1
     return combined
 
-originallist = [4,2,6,5,1,3]
+originallist = [4, 2, 6, 5, 1, 3]
 sortedlist = MergeSort(originallist)
 
 print("Original list: ", originallist)
