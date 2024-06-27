@@ -1,5 +1,6 @@
 #1.Bubble Sort
 #It places the Largest element in the list in it's correct position after each pass
+#The original list also sorted after sorting
 def BubbleSort(my_list):
     #The number of iterations reduce by 1 after each pass
     for i in range(len(my_list)-1, 0, -1):
@@ -10,18 +11,23 @@ def BubbleSort(my_list):
                 my_list[j+1] = temp
     return my_list
 
-my_list = [4,2,6,5,1,3]
-print(BubbleSort (my_list))
+originallist = [4,2,6,5,1,3]
+sortedlist = BubbleSort(originallist)
+
+print("Original list: ", originallist)
+print("Sorted list: ", sortedlist)
 
 #Output
 """
 
-[1, 2, 3, 4, 5, 6]
+Original list:  [1, 2, 3, 4, 5, 6]
+Sorted list:  [1, 2, 3, 4, 5, 6]
 
 """
 
 #2.Selection Sort
 #It places the Smallest element in the list in it's correct position after each pass
+#The original list also sorted after sorting
 def SelectionSort(my_list):
     for i in range(len(my_list)):
         min = i
@@ -35,19 +41,24 @@ def SelectionSort(my_list):
             my_list[min] = temp
     return my_list        
 
-my_list = [4,2,6,5,1,3]
-print(SelectionSort(my_list))
+originallist = [4,2,6,5,1,3]
+sortedlist = SelectionSort(originallist)
+
+print("Original list: ", originallist)
+print("Sorted list: ", sortedlist)
 
 #Output
 """
 
-[1, 2, 3, 4, 5, 6]
+Original list:  [1, 2, 3, 4, 5, 6]
+Sorted list:  [1, 2, 3, 4, 5, 6]
 
 """
 
 #3.Insertion Sort
 #The list has 2 parts; Ordered(left) and Unordered(right). After each pass, each element in Unordered part is placed in the correct position in   
 #the Ordered part of the list
+#The original list also sorted after sorting
 def InsertionSort(my_list):
     for i in range(1, len(my_list)):
         temp = my_list[i]
@@ -58,12 +69,16 @@ def InsertionSort(my_list):
             j -= 1
     return my_list
 
-my_list = [4,2,6,5,1,3]
-print(InsertionSort (my_list))
+originallist = [4,2,6,5,1,3]
+sortedlist = InsertionSort(originallist)
+
+print("Original list: ", originallist)
+print("Sorted list: ", sortedlist)
 
 #Output
 """
 
-[1, 2, 3, 4, 5, 6]
+Original list:  [1, 2, 3, 4, 5, 6]
+Sorted list:  [1, 2, 3, 4, 5, 6]
 
 """
