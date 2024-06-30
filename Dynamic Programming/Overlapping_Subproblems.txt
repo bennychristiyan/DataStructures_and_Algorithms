@@ -1,0 +1,14 @@
+There are two things that are required for something to be able to use dynamic programming. The first requirement is Overlapping subproblems and
+the second requirement is Optimized substructure
+
+Overlapping subproblems are subproblems of a main problem, among which some subproblems are identical to others
+
+Say, SP1 has trillion operations and returns a value 10; we can store the value 10 in a list, say, at index 1. Say, another SP is identical to SP1, 
+instead of repeating the trillion operations, we can use the value 10 at index 1. This makes the time complexity for the identical SP as O(1). 
+Hence, this is very time efficient.
+
+The process of storing the answers of these subproblems is called MEMOIZATION
+
+We repeat the above process, for all subproblems. And finally we combine the answers of the subproblems to obtain the answer of the main problem
+
+Merge sort is not an Overlapping subproblem as it doesn't have any identical subproblems

@@ -1,0 +1,20 @@
+There are two things that are required for something to be able to use dynamic programming. The first requirement is Overlapping subproblems and
+the second requirement is Optimized substructure
+
+Consider a weighted graph. A <--> B: 10, A <--> C: 30, B <--> D: 15 and C <--> D: 20
+
+Say, we want to go from A to D and we want to have the lowest cost path. 
+There are two ways to get there. We can either go A, C, D and the total cost would be 50[(i.e)30 + 20] (or) we can go A, B, D and the total cost 
+would be 25[(i.e)10 + 15]. Obviously A, B, D would be the better path. 
+But in order to get from A to D we have a couple of subproblems. We have the subproblem of how do we go from A to B, and the sub problem of how 
+do we go from B to D. 
+And what makes this an optimized substructure is, if you get the optimal way of going from A to B, and the optimal way of going from B to D, it 
+gives you the optimal way of going from A to D. 
+So, you have to have an optimized substructure, which means if you have the optimal solution for all subproblems, that's going to give you the 
+optimal solution to the overall problem.
+
+Now, to show something that does not have an optimal substructure, instead of doing the lowest cost path, we're going to do the highest cost path.
+This highest cost path doesn't have any overlap or retracing, because you could just go from A to C, back to A, back to C infinitely and have an 
+infinite cost path. So this is doing it with no overlapping. 
+The highest cost path from A to C is not to go directly from A to C, but to go A, B, D, C and the highest cost path to go from C to D is to go C, 
+A, B, D. So in this situation, you can't take the optimal solution to each subproblem and solve the overall problem.
